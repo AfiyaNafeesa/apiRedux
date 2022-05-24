@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.main {
+  margin-left: 25px;
+  margin-right: 25px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.select {
+  font-weight: 700;
+  font-size: medium;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropdown{
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px 8px;
+  display: inline-block;
+  margin-bottom: 1%;
+  width:100%
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.list{
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin-right :100%;
+  background-color: white;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.userBg{
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 20px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+.img{
+  border-radius: 30px;
+  padding: 1.5%;
+}
+.name{
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 1%;
+}
+.email{
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 50%;
+}
+.arrow{
+  width: 2%;
+  height: 2%;
+  margin-left: 95%;
+}
+@media only screen and (max-width: 450px){
+  .email{
+    position: absolute;
+  margin-top: 10%;
+  margin-left: 1%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+@media only screen and (max-width: 450px){
+  .arrow{
+  width: 6%;
+  height: 6%;
+  margin-left: 85%;
+}
 }
